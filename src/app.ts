@@ -9,9 +9,6 @@ let i = 0
 async function main() {
     const sids = await getRules()
 
-    //sids.forEach(async (sid) => {
-    //    //console.log(sid)
-    //})
     for (const sid of sids) {
         try {
             await addNewEventMappingAndQidRecord({
